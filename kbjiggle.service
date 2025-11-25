@@ -1,0 +1,10 @@
+[Unit]
+Description=USB Keyboard Jiggler emulator
+
+[Service]
+ExecStart=/usr/bin/rpi-hid.sh
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
